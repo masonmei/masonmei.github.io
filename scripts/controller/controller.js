@@ -311,7 +311,6 @@ iGitrasMason.controller('ArticleController', ['$scope', '$routeParams', 'Article
         ArticleService.loadArticle($routeParams.id).success(
             function (data, status, headers, config) {
                 $scope.id = data.id;
-                alert(JSON.stringify(data.header));
                 $scope.header = data.header;
                 $scope.content = data.content;
 
